@@ -3,10 +3,8 @@ public class Main {
         Player player = new Player("Blade", 100, 56, 4);
         Enemy enemy = new Enemy("Goblin", 90, 4);
 
-
-        }
-    public takeDamage(Enemy targer) {
-        player
+        player.attack(enemy);
+        enemy.takeDamage(player.attackPower);
     }
 }
 /* Step 1.

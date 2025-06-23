@@ -9,4 +9,7 @@ public class Enemy {
         this.attackPowerE = attackPowerE;
         this.healthE = healthE;
     }
+    public void takeDamage(int damage) {
+        damage -= healthE;
+    }
 }

@@ -10,4 +10,8 @@ public class Player {
         this.xp = xp;
         this.attackPower = attackPower;
         }
+        public void attack(Enemy target) {
+        attackPower -= target.healthE;
+            System.out.println("Blade takes damage for " + attackPower);
+        }
     }
