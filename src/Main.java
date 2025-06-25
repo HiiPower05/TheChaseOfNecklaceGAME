@@ -4,7 +4,10 @@ public class Main {
         Enemy enemy = new Enemy("Goblin", 90, 4);
 
         player.attack(enemy);
-        enemy.takeDamage(player.attackPower);
+        if (!enemy.isAlive()) {
+            player.gainXP(20);
+            System.out.println(enemy.nameE + " has been defeated.");
+        }
     }
 }
 /* Step 1.

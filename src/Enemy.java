@@ -10,6 +10,11 @@ public class Enemy {
         this.healthE = healthE;
     }
     public void takeDamage(int damage) {
-        damage -= healthE;
+        healthE -= damage;
+        if(healthE < 0) healthE = 0;
+        System.out.println(nameE + " now has " + healthE + " HP.");
+    }
+    public boolean isAlive() {
+        return healthE > 0;
     }
 }
